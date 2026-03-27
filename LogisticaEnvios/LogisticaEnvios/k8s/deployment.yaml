@@ -13,7 +13,7 @@ spec:
         app: api
     spec:
       containers:
-      - name: LogisticaEnvios
+      - name: logistica-envios-api
         image: franye/logisticaenvios:dev
         ports:
         - containerPort: 80
