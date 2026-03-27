@@ -16,4 +16,4 @@ spec:
       - name: logistica-envios-api
         image: franye/logisticaenvios:dev
         ports:
-        - containerPort: 80
+        - containerPort: 8080
