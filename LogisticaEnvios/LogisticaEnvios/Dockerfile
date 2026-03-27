@@ -11,10 +11,10 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["LogisticaEnvios/LogisticaEnvios/LogisticaEnvios.csproj", "LogisticaEnvios/LogisticaEnvios/"]
-RUN dotnet restore "./LogisticaEnvios/LogisticaEnvios/LogisticaEnvios.csproj"
+COPY ["LogisticaEnvios.csproj", "./"]
+RUN dotnet restore "./LogisticaEnvios.csproj"
 COPY . .
-WORKDIR "/src/LogisticaEnvios/LogisticaEnvios"
+WORKDIR "/src"
 RUN dotnet build "./LogisticaEnvios.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
