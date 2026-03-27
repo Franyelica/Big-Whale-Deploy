@@ -1,5 +1,5 @@
 # despliegue-software
-PRACTICA 1 - CI
+PRACTICA 2 - Docker
 ## Equipo
 - Big Whale
 
