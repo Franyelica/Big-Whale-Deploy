@@ -9,3 +9,6 @@ PRACTICA 2 - Docker
 - Franyelica Garcia
 - Santiago Castaño Torres
 - Juan David Palacio
+
+## Link video youtube
+- https://youtu.be/8lR-WFHNmfM
